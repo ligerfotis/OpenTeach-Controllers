@@ -1,16 +1,16 @@
 PC:
   # NAME: irmak # These IP addresses should be modified properly
   # IP: 100.82.146.36 
-  NAME: "grail"
-  IP: 100.126.30.132
+  NAME: fotis-AORUS-15P-YD #"rosie"
+  IP: 10.71.1.183 #localhost
 
 NUC:
-  NAME: "grail"
-  IP: 100.126.30.132
+  NAME: cps-wkstn-realtime #"charmander"
+  IP: 10.71.1.156 #172.16.0.3
   PUB_PORT: 5556
-  SUB_PORT: 5557
+  SUB_PORT: 5555
   GRIPPER_PUB_PORT: 5558
-  GRIPPER_SUB_PORT: 5559
+  GRIPPER_SUB_PORT: 5557
 
 # TODO: Write a script to change everything in the nuc
 
