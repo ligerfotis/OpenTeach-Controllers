@@ -1,33 +1,34 @@
+# import json
+
 import rospy
+# import yaml
 from std_msgs.msg import Float64MultiArray
 import numpy as np
 import time
 from scipy.spatial.transform import Rotation as R
-import math
-
-from sensor_msgs.msg import JointState
-from geometry_msgs.msg import PoseStamped
-#from allegro_hand.controller import AllegroController
-from franka_arm.controller import FrankaController
-from copy import deepcopy as copy
-
-
-
-from deoxys.utils import transform_utils
-
-from franka_arm.constants import *
-from franka_arm.utils import generate_cartesian_space_min_jerk
-
+# import math
 import sys
 sys.path.insert(0, "src/franka-arm-controllers")
 
-from franka_arm.utils.timer import FrequencyTimer
+# from sensor_msgs.msg import JointState
+# from geometry_msgs.msg import PoseStamped
+# from allegro_hand.controller import AllegroController
+from franka_arm.controller import FrankaController
+# from copy import deepcopy as copy
+
+# from deoxys.utils import transform_utils
+
+from franka_arm.constants import *
+# from franka_arm.utils import generate_cartesian_space_min_jerk
+
+
+# from franka_arm.utils.timer import FrequencyTimer
 from deoxys.utils.config_utils import get_default_controller_config
 import argparse
 from deoxys.franka_interface import FrankaInterface
 from deoxys import config_root
 from deoxys.experimental.motion_utils import reset_joints_to
-from scipy.spatial.transform import Rotation
+# from scipy.spatial.transform import Rotation
 
 HOME_POSITION = [0.3, 0, 0.35, 1, 0, 0, 0]
 minTranslation = 0.05    #in meters
